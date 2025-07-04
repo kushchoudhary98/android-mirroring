@@ -13,5 +13,8 @@ struct Android_MirroringApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowStyle(HiddenTitleBarWindowStyle())
+        .defaultSize(width: 500, height: 500)
+        .windowResizability(.contentSize)
     }
 }
