@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A47481ED2E183E7F005D8A7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47481EA2E183E7F005D8A7D /* Assets.xcassets */; };
+		A47481EE2E183E7F005D8A7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47481EB2E183E7F005D8A7D /* ContentView.swift */; };
+		A47481EF2E183E7F005D8A7D /* Android_MirroringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47481E92E183E7F005D8A7D /* Android_MirroringApp.swift */; };
+		A47481F32E183F5A005D8A7D /* VersionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47481F22E183F5A005D8A7D /* VersionViewModel.swift */; };
+		A47482122E190BE3005D8A7D /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47482112E190BD5005D8A7D /* DevicesViewModel.swift */; };
+		A47482142E190CE8005D8A7D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47482132E190CE8005D8A7D /* Device.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A4F6CA8E2E11D24900ECBA40 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,15 +33,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A47481E82E183E7F005D8A7D /* Android_Mirroring.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Android_Mirroring.entitlements; sourceTree = "<group>"; };
+		A47481E92E183E7F005D8A7D /* Android_MirroringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Android_MirroringApp.swift; sourceTree = "<group>"; };
+		A47481EA2E183E7F005D8A7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A47481EB2E183E7F005D8A7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A47481F22E183F5A005D8A7D /* VersionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionViewModel.swift; sourceTree = "<group>"; };
+		A47482112E190BD5005D8A7D /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
+		A47482132E190CE8005D8A7D /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		A4F6CA7F2E11D24400ECBA40 /* Android Mirroring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Android Mirroring.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F6CA8D2E11D24900ECBA40 /* Android MirroringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Android MirroringTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F6CA972E11D24900ECBA40 /* Android MirroringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Android MirroringUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A474820D2E18439E005D8A7D /* Exceptions for "scrcpy-x86_64" folder in "Android Mirroring" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			assetTagsByRelativePath = {
+				adb = (New, );
+				scrcpy = (New, );
+			};
+			target = A4F6CA7E2E11D24400ECBA40 /* Android Mirroring */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A4F6CA812E11D24400ECBA40 /* Android Mirroring */ = {
+		A47481F02E183EF6005D8A7D /* views */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Android Mirroring";
+			path = views;
+			sourceTree = "<group>";
+		};
+		A47481F12E183EFC005D8A7D /* utilities */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = utilities;
+			sourceTree = "<group>";
+		};
+		A47481F62E18403D005D8A7D /* resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = resources;
+			sourceTree = "<group>";
+		};
+		A47482072E184166005D8A7D /* scrcpy-x86_64 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A474820D2E18439E005D8A7D /* Exceptions for "scrcpy-x86_64" folder in "Android Mirroring" target */,
+			);
+			path = "scrcpy-x86_64";
 			sourceTree = "<group>";
 		};
 		A4F6CA902E11D24900ECBA40 /* Android MirroringTests */ = {
@@ -72,13 +117,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A47481E62E183E7F005D8A7D /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A47482132E190CE8005D8A7D /* Device.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		A47481E72E183E7F005D8A7D /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				A47482112E190BD5005D8A7D /* DevicesViewModel.swift */,
+				A47481F22E183F5A005D8A7D /* VersionViewModel.swift */,
+			);
+			path = viewmodels;
+			sourceTree = "<group>";
+		};
+		A47481EC2E183E7F005D8A7D /* Android Mirroring */ = {
+			isa = PBXGroup;
+			children = (
+				A47481F62E18403D005D8A7D /* resources */,
+				A47481F12E183EFC005D8A7D /* utilities */,
+				A47481F02E183EF6005D8A7D /* views */,
+				A47481E62E183E7F005D8A7D /* models */,
+				A47481E72E183E7F005D8A7D /* viewmodels */,
+				A47481E82E183E7F005D8A7D /* Android_Mirroring.entitlements */,
+				A47481E92E183E7F005D8A7D /* Android_MirroringApp.swift */,
+				A47481EA2E183E7F005D8A7D /* Assets.xcassets */,
+				A47481EB2E183E7F005D8A7D /* ContentView.swift */,
+			);
+			path = "Android Mirroring";
+			sourceTree = "<group>";
+		};
 		A4F6CA762E11D24400ECBA40 = {
 			isa = PBXGroup;
 			children = (
-				A4F6CA812E11D24400ECBA40 /* Android Mirroring */,
+				A47481EC2E183E7F005D8A7D /* Android Mirroring */,
 				A4F6CA902E11D24900ECBA40 /* Android MirroringTests */,
 				A4F6CA9A2E11D24900ECBA40 /* Android MirroringUITests */,
 				A4F6CA802E11D24400ECBA40 /* Products */,
+				A47482072E184166005D8A7D /* scrcpy-x86_64 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,7 +187,10 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A4F6CA812E11D24400ECBA40 /* Android Mirroring */,
+				A47481F02E183EF6005D8A7D /* views */,
+				A47481F12E183EFC005D8A7D /* utilities */,
+				A47481F62E18403D005D8A7D /* resources */,
+				A47482072E184166005D8A7D /* scrcpy-x86_64 */,
 			);
 			name = "Android Mirroring";
 			packageProductDependencies = (
@@ -170,6 +252,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
@@ -212,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47481ED2E183E7F005D8A7D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +322,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47481EE2E183E7F005D8A7D /* ContentView.swift in Sources */,
+				A47482122E190BE3005D8A7D /* DevicesViewModel.swift in Sources */,
+				A47482142E190CE8005D8A7D /* Device.swift in Sources */,
+				A47481F32E183F5A005D8A7D /* VersionViewModel.swift in Sources */,
+				A47481EF2E183E7F005D8A7D /* Android_MirroringApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,11 +493,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kushchoudhary98.Android-Mirroring";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,11 +522,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kushchoudhary98.Android-Mirroring";
 				PRODUCT_NAME = "$(TARGET_NAME)";
